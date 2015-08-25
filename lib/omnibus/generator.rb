@@ -99,7 +99,7 @@ module Omnibus
         template("package_scripts/#{package_script}.erb", script_path, template_options)
 
         # Ensure the package script is executable
-        chmod(script_path, 0755)
+        chmod(script_path, 0775)
       end
     end
 
